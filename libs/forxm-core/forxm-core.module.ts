@@ -24,6 +24,12 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatToolbarModule,
     MatCardModule,
     MatDialogModule
+  ],
+  exports: [
+    ProfileComponent,
+    PostBodyComponent,
+    ThreadBodyComponent,
+    HeaderComponent
   ]
 })
 export class ForxmCoreModule { }
