@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ForxmCoreModule } from 'libs/forxm-core/forxm-core.module';
+import { PlayabilityModule } from 'libs/playability/playability.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +12,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ForxmCoreModule,
+    PlayabilityModule
   ],
   providers: [],
   bootstrap: [AppComponent]
