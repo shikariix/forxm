@@ -6,17 +6,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ForxmCoreModule } from 'libs/forxm-core/forxm-core.module';
 import { PlayabilityModule } from 'libs/playability/playability.module';
 import { PagesModule } from './pages/pages.module';
+import { HeaderComponent } from '../../libs/forxm-core/components/header/header.component';
+import { MatCommonModule } from '@angular/material/core';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     ForxmCoreModule,
     PlayabilityModule,
-    PagesModule
+    PagesModule,
+    MatCommonModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

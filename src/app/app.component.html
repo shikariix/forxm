@@ -1,3 +1,10 @@
-<ng-container *ngIf="currentPage === 'home'">
-  <app-home-page></app-home-page>
-</ng-container>
+<mat-grid-list cols="1" rowHeight="2:1">
+  <mat-grid-tile><app-header></app-header></mat-grid-tile>
+  <mat-grid-tile>
+    <ng-container *ngIf="currentPage === 'home'">
+      <app-home-page></app-home-page>
+    </ng-container>
+  </mat-grid-tile>
+  <mat-grid-tile>footer</mat-grid-tile>
+</mat-grid-list>
+
