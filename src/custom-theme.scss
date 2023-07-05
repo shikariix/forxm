@@ -12,8 +12,8 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$forxm-primary: mat.define-palette(mat.$indigo-palette);
-$forxm-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$forxm-primary: mat.define-palette(mat.$pink-palette);
+$forxm-accent: mat.define-palette(mat.$indigo-palette, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
 $forxm-warn: mat.define-palette(mat.$red-palette);
@@ -32,3 +32,7 @@ $forxm-theme: mat.define-light-theme((
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include mat.all-component-themes($forxm-theme);
+
+:root {
+  --app-header-image: url(assets/images/header_default.jpg);
+}

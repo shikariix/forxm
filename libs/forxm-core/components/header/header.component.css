@@ -1,0 +1,18 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.app-header-image {
+  background: var(--app-header-image);
+  min-height: 24rem;
+  background-size: cover;
+  align-content: center;
+  display: grid;
+}
+.app-header-image h1 {
+  text-align: center;
+  color: white;
+}
+.app-header-toolbar {
+  position: sticky;
+}/*# sourceMappingURL=header.component.css.map */
